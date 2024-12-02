@@ -10,7 +10,6 @@ class Character:
         self.is_dodging = is_dodging
 
     def attack(self, opponent):
-        #print(f"{self.name} attacks {opponent.name}")
         if opponent.is_dodging:
             print(f"\n{self.name} attacks {opponent.name}")
             opponent.is_dodging = False
@@ -165,7 +164,6 @@ def battle(player, wizard):
             continue
         else:
             print("Invalid choice, try again.")
-            #continue
 
         # Evil Wizard's turn to attack and regenerate
         if wizard.health > 0:
